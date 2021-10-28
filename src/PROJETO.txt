@@ -1,0 +1,35 @@
+
+==========================================================================================================
+PROJETO FRONT-END [ || ANGULAR]
+:
+
+1 -- Livraria
+==============================
+*Cadastro de clientes(nome, login, senha, telefone)
+*Cadastro de funcionarios (nome, login, senha)
+*um usuário ROOT -> acesso total
+*cadastro de livros (titulo, genero, autor, preco)
+----
+
+ROOT cadastra fucionários
+funcionarios cadastram livros e clientes
+Clientes alugam livros já cadastrados pelos funcionários
+
+----
+Cada um deles só veêm os links que podem acessar. Caso deêm uma de espertos e coloquem o link direto no navegador, deverão ser impedidos pelos guards.
+----
+deverá haver um home com acesso à qualquer um na web. Todos, também, podem ver os livros, mas só podem alugar quem for cliente.
+
+==============================
+root cadastra funcionario
+
+ROOT > pode ver Home, cad funcionario (so pode cadastrar aqui), cad livro, cad cliente,  aluga livros
+FUNCIONARIO> pode ver Home, cad livro, cad cliente,  aluga livros
+CLIENTE> pode ver Home, aluga livros
+class="select" multiple
+======================================================================================================================
+
+
+
+
+

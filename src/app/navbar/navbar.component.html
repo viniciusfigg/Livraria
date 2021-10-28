@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid fundonav ">
+    <a class="nav-link black" routerLink="/home"><img class="imglogo" src="https://cdn.dribbble.com/users/1787323/screenshots/11115035/media/acd6ef3bfd4fd4d9a38d2ee945d3bce8.png?compress=1&resize=400x300" ></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <div id="lblUser"></div>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/livros">Livros &nbsp;|</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/alugar-livro">Alugar livros &nbsp;|</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " (click)="logout()" routerLink="#">Sair &nbsp;|</a> 
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Área de funcionários
+          </a>
+          <ul class="dropdown-menu fundonav" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="nav-link " routerLink="/cadastro-funcionario">Cadastro de Funcionários</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="nav-link " routerLink="/cadastro-cliente">Cadastro de Clientes</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="nav-link " routerLink="/cadastro-livro">Cadastro de Livros</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="nav-link  " routerLink="/login">Login</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="nav-link" (click)="logout()" routerLink="#">Sair</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
